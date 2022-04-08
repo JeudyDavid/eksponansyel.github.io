@@ -1,0 +1,542 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <!-- start Gist JS code-->
+        <script>
+            (function(d,h,w){var gist=w.gist=w.gist||[];gist.methods=['trackPageView','identify','track','setAppId'];gist.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);gist.push(e);return gist;}};for(var i=0;i<gist.methods.length;i++){var c=gist.methods[i];gist[c]=gist.factory(c)}s=d.createElement('script'),s.src="https://widget.getgist.com",s.async=!0,e=d.getElementsByTagName(h)[0],e.appendChild(s),s.addEventListener('load',function(e){},!1),gist.setAppId("orfzd7hv"),gist.trackPageView()})(document,'head',window);
+        </script>
+        <!-- end Gist JS code-->
+        <!--=============== BOXICONS ===============-->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> -->
+        
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+        <title>eksponensyel</title>
+    </head>
+    <body>
+        <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img class="logo_eksp" src="/assets/img/logekps.png" alt="">
+                    <!-- <i class='bx bxs-watch nav__logo-icon'></i> EKSPONENSYÈL -->
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a id="cart-shop" href="" class="nav__link bx">Courses</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!--==================== CART ====================-->
+        <div class="cart" id="cart">
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+
+            <h2 class="cart__title-center">My Cart</h2>
+
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/featured1.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Jazzmaster</h3>
+                        <span class="cart__price">$1050</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/featured3.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Rose Gold</h3>
+                        <span class="cart__price">$850</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/new1.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Longines Rose</h3>
+                        <span class="cart__price">$980</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 items</span>
+                <span class="cart__prices-total">$2880</span>
+            </div>
+        </div>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <!-- <div class="home__img-bg">
+                        <img src="assets/img/favicon.png" alt="" class="home__img">
+                    </div> -->
+                    <div class="home__img-bg">
+                        
+                        <img src="assets/img/home.png" alt="" class="home__img">
+                        
+                    </div>
+    
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            Linkedin
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            Youtube
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div>
+    
+                    <div class="home__data">
+                        <h1 class="home__title">Design and build great apps</h1>
+                        <p class="home__description">
+                            TO LOCAL AND INTERNATIONNAL COMPANIES
+                        </p>
+                        <span class="home__price">HAITIAN DEV 😎 🇭🇹</span>
+
+                        <div class="home__btns">
+
+                            <button class="button home__button">TALK TO A PRO</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <section class="service-wrp" id="services">
+                <h2 class="section__title">
+                    OUR SERVICES
+                </h2>
+                <div class="service-wrp-inner">
+                    
+                    <!--service-card-->
+            
+                    <div class="service-card bg-dark">
+                        <div class="d-flex">
+                            <div class="icon">
+                                <img src="/assets/img/smartphone.png">
+                            </div>
+                            <div class="heading">
+                                <h5>Mobile App Development</h5>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p>Serspiciatis unde omnis iste natus laudantium, totam rem aperiam.</p>
+                            <a href="" class="info-link">Read More</a>
+                        </div>
+                    </div><!--service-card-->
+            
+                    <div class="service-card bg-dark">
+                        <div class="d-flex">
+                            <div class="icon">
+                                <img src="/assets/img/design.png">
+                            </div>
+                            <div class="heading">
+                                <h5>Clean Code</h5>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p>Serspiciatis unde omnis iste natus laudantium, totam rem aperiam.</p>
+                            <a href="" class="info-link">Read More</a>
+                        </div>
+                    </div><!--service-card-->
+            
+                    <div class="service-card bg-dark">
+                        <div class="d-flex">
+                            <div class="icon">
+                                <img src="assets/img/responsive.png">
+                            </div>
+                            <div class="heading">
+                                <h5>Web Development</h5>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p>Serspiciatis unde omnis iste natus laudantium, totam rem aperiam.</p>
+                            <a href="" class="info-link">Read More</a>
+                        </div>
+                    </div><!--service-card-->
+            
+                    <div class="service-card bg-dark">
+                        <div class="d-flex">
+                            <div class="icon">
+                                <img src="/assets/img/customer-service.png">
+                            </div>
+                            <div class="heading">
+                                <h5>24/7 support</h5>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p>Serspiciatis unde omnis iste natus laudantium, totam rem aperiam.</p>
+                            <a href="" class="info-link">Read More</a>
+                        </div>
+                    </div><!--service-card-->
+            
+                    <div class="service-card bg-dark">
+                        <div class="d-flex">
+                            <div class="icon">
+                                <img src="/assets/img/online-course.png">
+                            </div>
+                            <div class="heading">
+                                <h5>Online courses</h5>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p>Serspiciatis unde omnis iste natus laudantium, totam rem aperiam.</p>
+                            <a href="" class="info-link">Read More</a>
+                        </div>
+                    </div><!--service-card-->
+            
+                </div>
+            </section>
+            <!--==================== Services ====================-->
+            <section class="featured section container" id="featured">
+                <h2 class="section__title">
+                    Projects
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag"></span>
+
+                        <img class="pro_image" src="assets/img/project1.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">J</h3>
+                            <h3 class="featured__title">J</h3>
+                            <span class="featured__price">ALLOPHARMA</span>
+                        </div>
+
+                        <button class="button featured__button">visiter</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag"></span>
+
+                        <img class="pro_image" src="assets/img/project1.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">J</h3>
+                            <h3 class="featured__title">J</h3>
+                            <span class="featured__price">ALLOPHARMA</span>
+                        </div>
+
+                        <button class="button featured__button">Visiter</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag"></span>
+
+                        <img class="pro_image" src="assets/img/project1.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">J</h3>
+                            <h3 class="featured__title">J</h3>
+                            <span class="featured__price">ALLOPHARMA</span>
+                        </div>
+
+                        <button class="button featured__button">Visiter</button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== STORY ====================-->
+            <section class="story section container">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            BOOTCAMP
+                        </h2>
+    
+                        <h1 class="story__title">
+                            LEARN WITH BEST DEVELOPPER 
+                        </h1>
+    
+                        <p class="story__description">
+                            learn skills like web Development, mobile Development with JavaScript, python, swift and Java
+                        </p>
+    
+                        <a href="#" class="button button--small">Courses</a>
+                    </div>
+
+                    <div class="story__images">
+                        <img src="assets/img/lang.svg" alt="" class="story__img">
+                        <div class="story__square"></div>
+                    </div>
+                </div>
+            </section>
+
+
+            </section>
+            <!-- our team -->
+            <div class="team">
+                <h2 class="section__title">
+                    OUR TEAM
+                </h2>
+            
+                <div class="profiles">
+                  <div class="profile">
+                    <img src="assets/img/img1.jpg" class="profile-img">
+            
+                    <h3 class="user-name">William</h3>
+                    <h5>Creative Director</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eveniet soluta hic sunt sit reprehenderit.</p>
+                  </div>
+                  <div class="profile">
+                    <img src="assets/img/img2.jpg" class="profile-img">
+            
+                    <h3 class="user-name">Camila</h3>
+                    <h5>Managing Partner</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>
+                  </div>
+                  <div class="profile">
+                    <img src="assets/img/pere.png" class="profile-img">
+            
+                    <h3 class="user-name">Rene alain webster</h3>
+                    <h5>Full Stack python developper</h5>
+                    <p>i can develop python program!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="team1">
+            
+                <div class="profiles">
+                  <div class="profile">
+                    <img src="assets/img/IMG_9974.jpg" class="profile-img">
+            
+                    <h3 class="user-name">William</h3>
+                    <h5>Creative Director</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eveniet soluta hic sunt sit reprehenderit.</p>
+                  </div>
+                  <div class="profile">
+                    <img src="assets/img/img2.jpg" class="profile-img">
+            
+                    <h3 class="user-name">Camila</h3>
+                    <h5>Managing Partner</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>
+                  </div>
+                  <div class="profile">
+                    <img src="assets/img/img3.jpg" class="profile-img">
+            
+                    <h3 class="user-name">Isabella</h3>
+                    <h5>Project Manager</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eveniet!</p>
+                  </div>
+                </div>
+              </div>
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container">
+                <div class="newsletter__bg grid">
+                    <div>
+                        <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
+                        <p class="newsletter__description">
+                            Don't miss out on your discounts. Subscribe to our email 
+                            newsletter to get the best offers, discounts, coupons, 
+                            gifts and much more.
+                        </p>
+                    </div>
+
+                    <form action="" class="newsletter__subscribe">
+                        <input type="email" placeholder="Enter your email" class="newsletter__input">
+                        <button class="button">
+                            SUBSCRIBE
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <form action="https://send.pageclip.co/Z3BWL2ISy3RGzEisIYUYy2rmkZtKHPbE" class="pageclip-form" method="post">
+            <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+            <input type="text" name="name" value="Roscoe Jones" />
+            <input type="email" name="email" value="roscoe@example.com" />
+          
+            <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+            <button type="submit" class="pageclip-form__submit">
+              <span>Send</span>
+            </button>
+          </form>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Our information</h3>
+
+                    <ul class="footer__list">
+                        <li>Port-au-prince</li>
+                        <li>Haiti</li>
+                        <li>(509) 34359623</li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">About Us</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Support Center</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Copy Right</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Projects</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">allopharma</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">allopharma</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">allopharma</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">allopharma</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; EKSPONENSYÈL. All rigths reserved</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
